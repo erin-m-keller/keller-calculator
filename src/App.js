@@ -100,6 +100,7 @@ class App extends React.Component {
         </main>
         <footer>
           <h2>&copy; 2023 <a href="https://erin-m-keller.github.io/keller-portfolio/" target="_blank" rel="noreferrer">Erin Keller</a></h2>
+          <p><a href="https://www.flaticon.com/free-icons/calculator" title="calculator icons">Calculator favicon created by Roundicons - Flaticon</a></p>
         </footer>
       </div>
     );
