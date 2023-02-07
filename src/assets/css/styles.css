@@ -16,6 +16,7 @@
 
    The base styles for the page, text
    and links. Includes utility class styles
+   and animation
 ************************************************/
 @font-face {
   font-family: 'DigitalLCD';
@@ -73,8 +74,7 @@ h1 strong {
    HEADER                                @header
 
    The styles for the header which
-   includes a title, an image and a 
-   horizontal menu (desktop and mobile)
+   includes a title and an image
 ************************************************/
 .main-header {
   background-color: var(--bg-color-one);
@@ -107,7 +107,7 @@ h1 strong {
    CALCULATOR                         @calculator
 
    The styles for the calculator which
-   includes a the container, buttons and
+   includes the container, buttons and
    screen output
 ************************************************/
 .calculator {
