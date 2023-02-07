@@ -85,15 +85,15 @@ class App extends React.Component {
               <div className="user-input">{userInput}</div>
               <div className="result">{result}</div>
             </div>
-            <button onClick={e => this.deleteClick(e)} className="pushable span-two" value="DEL"><span className="front">DEL</span></button>
-            <button onClick={e => this.allClearClick(e)} className="pushable span-two" value="AC"><span className="front">AC</span></button>
+            <button onClick={e => this.deleteClick(e)} className="three-dimensional span-two" value="DEL"><span className="face">DEL</span></button>
+            <button onClick={e => this.allClearClick(e)} className="three-dimensional span-two" value="AC"><span className="face">AC</span></button>
             {
-              /* loop through and display each calculator button */
+              /* loop through and display each calculator button - aside from AC/DEL */
               calculatorBtns.map((btnVal,idx) => ( 
                 <button onClick={e => this.btnClick(e)} 
                         key={idx} 
                         value={btnVal}
-                        className={`pushable ${btnVal === "=" ? "span-four" : ""} ${btnVal === "0" ? "span-two" : ""}`}><span className="front">{btnVal}</span></button>
+                        className={`three-dimensional ${btnVal === "=" ? "span-four" : ""} ${btnVal === "0" ? "span-two" : ""}`}><span className="face">{btnVal}</span></button>
               ))
             }
           </div>

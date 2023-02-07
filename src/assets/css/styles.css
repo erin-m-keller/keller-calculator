@@ -125,11 +125,7 @@ h1 strong {
   border-radius: 12px;
   padding: 0.5rem 1rem;
 }
-.btn-wrapper {
-  background-color: var(--white);
-}
-
-.pushable {
+.three-dimensional {
   background: #cb4a36;
   border-radius: 12px;
   padding: 0;
@@ -138,7 +134,21 @@ h1 strong {
   box-shadow: 0 7px 5px rgb(0 0 0 / 50%), 0 1px 2px rgb(0 0 0 / 24%);
   transition: all 0.3s cubic-bezier(.25,.8,.25,1);
 }
-.front {
+.three-dimensional:focus:not(:focus-visible) {
+  outline: none;
+}
+.three-dimensional:hover,
+.three-dimensional:focus {
+  box-shadow: 0 15px 28px rgb(0 0 0 / 50%), 0 10px 10px rgb(0 0 0 / 22%);
+}
+.three-dimensional:hover .face {
+  transform: translateY(-6px);
+}
+.three-dimensional:active .face {
+  transform: translateY(-2px);
+  background-color: #f7826f;
+}
+.face {
   display: block;
   height: 100%;
   width: 100%;
@@ -151,30 +161,6 @@ h1 strong {
   transform: translateY(-4px);
   transition: background-color 1s linear;
 }
-
-.pushable:focus:not(:focus-visible) {
-  outline: none;
-}
-.front {
-  will-change: transform;
-  transition: transform 250ms;
-}
-
-.pushable:hover,
-.pushable:focus {
-  box-shadow: 0 15px 28px rgb(0 0 0 / 50%), 0 10px 10px rgb(0 0 0 / 22%);
-}
-
-.pushable:hover .front {
-  transform: translateY(-6px);
-}
-
-.pushable:active .front {
-  transform: translateY(-2px);
-  background-color: #f7826f;
-}
-
-
 .display-panel {
   grid-column: 1 / -1;
   background-color: #7d8c73;
