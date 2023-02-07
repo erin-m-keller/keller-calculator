@@ -1,0 +1,215 @@
+/************************************************
+*
+*   Main Stylesheet
+*   @version (1.0)
+*   @date (2023)
+*
+*   1.) GENERAL _____________________ @general
+*   2.) HEADER ______________________ @header
+*   3.) CALCULATOR __________________ @calculator
+*   4.) FOOTER ______________________ @footer
+*
+************************************************/
+
+/************************************************
+   GENERAL                              @general
+
+   The base styles for the page, text
+   and links. Includes utility class styles
+************************************************/
+@font-face {
+  font-family: 'DigitalLCD';
+  src: local('DigitalLCD'),
+       url('../fonts/Calculator.woff') format('woff');
+}
+:root {
+  --bg-color-one: #282C34;
+  --bg-color-two: #61dafb;
+  --bg-color-three: #8360c3;
+  --bg-color-four: #2ebf91;
+  --bg-color-five: #ff715b;
+  --white: #FFF;
+  --black: #000;
+  --font-calc-style: "DigitalLCD", serif;
+  --font-main-style: "Nixie One", serif;
+}
+*, 
+*::before, 
+*::after {
+  box-sizing: border-box;
+  font-weight: normal;
+}
+body {
+  margin: 0;
+  padding: 0;
+  background: linear-gradient(to right, var(--bg-color-three), var(--bg-color-four));
+}
+a {
+  color: var(--bg-color-two);
+}
+h1 {
+  font-family: var(--font-main-style);
+}
+h1 strong {
+  font-family: var(--font-main-style);
+  font-weight: 600;
+}
+.body {
+  text-align: center;
+}
+.span-two {
+  grid-column: span 2;
+}
+
+.span-four {
+  grid-column: span 4;
+}
+@keyframes logo-spin {
+  from { transform: rotate(0deg); }
+  to { transform: rotate(360deg); }
+}
+
+/************************************************
+   HEADER                                @header
+
+   The styles for the header which
+   includes a title, an image and a 
+   horizontal menu (desktop and mobile)
+************************************************/
+.main-header {
+  background-color: var(--bg-color-one);
+  min-height: 13rem;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  font-size: calc(10px + 2vmin);
+  color: var(--white);
+  border-bottom: 3px solid var(--bg-color-two);
+}
+.main-header p {
+  font-size: 42px;
+  line-height: 0;
+}
+.main-header p strong {
+  font-weight: bold;
+}
+.logo {
+  height: 16vmin;
+  pointer-events: none;
+}
+@media (prefers-reduced-motion: no-preference) {
+  .logo {
+    animation: logo-spin infinite 20s linear;
+  }
+}
+
+/************************************************
+   CALCULATOR                         @calculator
+
+   The styles for the calculator which
+   includes a the container, buttons and
+   screen output
+************************************************/
+.calculator {
+  display: grid;
+  justify-content: center;
+  align-content: center;
+  min-height: 72vh;
+  grid-template-columns: 1fr 1fr 1fr 1fr;
+  margin: 4rem auto;
+  width: 100%;
+  max-width: 24em;
+  background: -webkit-linear-gradient(360deg, #3c3c3c 10%, #bababa 360%); 
+  background: -moz-linear-gradient(360deg, #3c3c3c 10%, #bababa 360%); 
+  background: linear-gradient(360deg, #3c3c3c 10%, #bababa 360%);
+  border-radius: 12px;
+  padding: 0.5rem 1rem;
+}
+.btn-wrapper {
+  background-color: var(--white);
+}
+
+.pushable {
+  background: #cb4a36;
+  border-radius: 12px;
+  padding: 0;
+  cursor: pointer;
+  border: 1px solid var(--black);
+  box-shadow: 0 7px 5px rgb(0 0 0 / 50%), 0 1px 2px rgb(0 0 0 / 24%);
+  transition: all 0.3s cubic-bezier(.25,.8,.25,1);
+}
+.front {
+  display: block;
+  height: 100%;
+  width: 100%;
+  padding: 0;
+  border-radius: 12px;
+  font-size: 3rem;
+  font-family: var(--font-calc-style);
+  background-color: var(--bg-color-five);
+  color: var(--black);
+  transform: translateY(-4px);
+  transition: background-color 1s linear;
+}
+
+.pushable:focus:not(:focus-visible) {
+  outline: none;
+}
+.front {
+  will-change: transform;
+  transition: transform 250ms;
+}
+
+.pushable:hover,
+.pushable:focus {
+  box-shadow: 0 15px 28px rgb(0 0 0 / 50%), 0 10px 10px rgb(0 0 0 / 22%);
+}
+
+.pushable:hover .front {
+  transform: translateY(-6px);
+}
+
+.pushable:active .front {
+  transform: translateY(-2px);
+  background-color: #f7826f;
+}
+
+
+.display-panel {
+  grid-column: 1 / -1;
+  background-color: #7d8c73;
+  display: flex;
+  align-items: flex-end;
+  justify-content: space-around;
+  flex-direction: column;
+  padding: 10px;
+  word-wrap: break-word;
+  word-break: break-all;
+  height: 9em;
+  box-shadow: inset 0px 0px 3px 3px #000;
+  margin-bottom: 1.25rem;
+}
+.display-panel .user-input,
+.display-panel .result {
+  font-family: var(--font-calc-style);
+  color: var(--black);
+  font-size: 3rem;
+}
+
+/************************************************
+   FOOTER                                 @footer
+
+   The styles for the footer
+************************************************/
+footer {
+  border-top: 3px solid var(--bg-color-two);
+  background-color: var(--bg-color-one);
+  padding: 0.5rem;
+}
+footer h2,
+footer a {
+  font-family: var(--font-main-style);
+  color: var(--white);
+  font-size: 1.5rem;
+  font-weight: 900;
+}
