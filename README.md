@@ -11,8 +11,8 @@ is a study in React building a working calculator.
 
 ## Deployed page
 
-Page published at: [https://erin-m-keller.github.io/react-calculator/](https://erin-m-keller.github.io/react-calculator/)
+[View Published Page](https://erin-m-keller.github.io/react-calculator/)
 
 ## License
 
-Please refer to the LICENSE in the repo.
+[MIT](https://choosealicense.com/licenses/mit/)
