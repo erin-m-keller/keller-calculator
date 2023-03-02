@@ -18,7 +18,7 @@ is a study in React building a working calculator.
 
 ## Deployed page
 
-[View Published Page](https://erin-m-keller.github.io/react-calculator/)
+[View Published Page](https://erin-m-keller.github.io/keller-calculator/)
 
 ## License
 

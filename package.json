@@ -1,7 +1,7 @@
 {
-  "name": "react-calculator",
+  "name": "keller-calculator",
   "version": "0.1.0",
-  "homepage": "https://erin-m-keller.github.io/react-calculator",
+  "homepage": "https://erin-m-keller.github.io/keller-calculator",
   "private": true,
   "dependencies": {
     "@testing-library/jest-dom": "^5.16.5",
