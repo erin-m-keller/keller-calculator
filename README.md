@@ -1,9 +1,14 @@
-# React Powered Calculator
+# React Calculator
 
 ## Description
 
-This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app). This application
-is a study in React building a working calculator.
+This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app). This application is a React calculator.
+
+## Table of Contents
+* [Technology Stack](#technology-stack)
+* [Screenshot](#screenshot)
+* [Deployed Page](#deployed-page)
+* [License](#license)
 
 ## Technology Stack
 
@@ -11,6 +16,11 @@ is a study in React building a working calculator.
 ![CSS](https://img.shields.io/badge/CSS-239120?&style=for-the-badge&logo=css3&logoColor=white)
 ![javaScript](https://img.shields.io/badge/JavaScript-F7DF1E?style=for-the-badge&logo=javascript&logoColor=black)
 ![reactJs](https://img.shields.io/badge/React-20232A?style=for-the-badge&logo=react&logoColor=61DAFB)
+
+![HTML5](https://img.shields.io/badge/-HTML5-61DAFB?color=red&style=flat)
+![CSS](https://img.shields.io/badge/-CSS-61DAFB?color=orange&style=flat)
+![javaScript](https://img.shields.io/badge/-JavaScript-61DAFB?color=yellow&style=flat)
+![reactJs](https://img.shields.io/badge/-React.js-61DAFB?color=green&style=flat)
 
 ## Screenshot
 
@@ -22,4 +32,4 @@ is a study in React building a working calculator.
 
 ## License
 
-[MIT](https://choosealicense.com/licenses/mit/)
+[![MIT license](https://img.shields.io/badge/License-MIT-purple.svg)](https://lbesson.mit-license.org/)
